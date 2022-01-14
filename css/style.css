@@ -95,7 +95,10 @@ hr {
 }
 
 .course {
-  /* border: 1px solid; */
+  padding: 13px;
+  border: 1px transparent solid;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.103);
+  border-radius: 15px;
 }
 .course-banner img {
   width: 224px;
