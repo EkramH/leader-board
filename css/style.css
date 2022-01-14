@@ -124,3 +124,40 @@ hr {
   border-radius: 20px;
   padding: 2px 7px;
 }
+
+/*---------------- 
+Media Quary 
+----------------*/
+
+/* Mobile Device */
+@media only screen and (max-width: 668px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .player,
+  .blog,
+  .course {
+    flex-direction: column;
+  }
+}
+
+/* Tab Device */
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
